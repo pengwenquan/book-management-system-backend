@@ -12,7 +12,7 @@ export class BookController {
     return this.bookService.list();
   }
 
-  @Get('id')
+  @Get(':id')
   async findById(@Param('id') id: number) {
     return this.bookService.findById(id)
   }
